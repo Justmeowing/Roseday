@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+  background-color: #87CEEB; /* Sky blue background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Utility class to hide pages */
+.hidden {
+  display: none;
+}
+
+/* Center each page */
+.page {
+  display: none;
+}
+.page:not(.hidden) {
+  display: block;
+}
+
+/* White square container with oval corners */
+.white-square {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px; /* Very rounded corners */
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* First Page: Bell GIF styles */
+.bell-gif {
+  width: 90%;
+  max-width: 450px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+.bell-gif:hover {
+  transform: scale(1.05);
+}
+
+/* Second Page: Grab-a-rose image */
+.grab-rose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  z-index: 2;
+}
+
+/* Container for rose GIFs */
+#rosesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Common style for each rose */
+.rose {
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.rose:hover {
+  transform: scale(1.2);
+}
+
+/* Third Page: Chosen Rose styles */
+.chosen-rose {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Message style in third page */
+#message {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Pick Another Rose Button */
+.pick-btn {
+  background-color: #87CEEB; /* Blue color similar to background */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.pick-btn:hover {
+  background-color: #70b7e1;
+}
+
+/* Final Page: Final GIF styling */
+.final-gif {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}

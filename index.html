@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose Day</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- First Page -->
+    <div id="firstPage" class="page">
+      <div class="white-square">
+        <!-- Large bell GIF (fills almost the whole square) -->
+        <img id="bellGif" src="images/bell.gif" alt="Ring the Bell" class="bell-gif" />
+      </div>
+    </div>
+
+    <!-- Second Page -->
+    <div id="secondPage" class="page hidden">
+      <div class="white-square">
+        <!-- Centered Grab-a-rose image -->
+        <img id="grabRose" src="images/grab-a-rose.png" alt="Grab a Rose" class="grab-rose" />
+        <!-- Container for the 7 rose GIFs -->
+        <div id="rosesContainer"></div>
+      </div>
+    </div>
+
+    <!-- Third Page -->
+    <div id="thirdPage" class="page hidden">
+      <div class="white-square">
+        <!-- Message at the top -->
+        <h2 id="message"></h2>
+        <!-- Big chosen rose GIF in the middle -->
+        <img id="chosenRose" src="" alt="Chosen Rose" class="chosen-rose" />
+        <!-- Blue button below the image -->
+        <button id="pickAnotherBtn" class="pick-btn">Pick another rose?</button>
+      </div>
+    </div>
+
+    <!-- Final Page -->
+    <div id="finalPage" class="page hidden">
+      <div class="white-square">
+        <img src="images/final.gif" alt="Final Message" class="final-gif" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
