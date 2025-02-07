@@ -20,8 +20,16 @@
       <div class="white-square">
         <!-- Centered Grab-a-rose image -->
         <img id="grabRose" src="images/grab-a-rose.png" alt="Grab a Rose" class="grab-rose" />
-        <!-- Container for the 7 rose GIFs -->
-        <div id="rosesContainer"></div>
+        <!-- Container for the 7 rose GIFs arranged in a circle -->
+        <div id="rosesContainer">
+          <img src="images/rose1.gif" class="rose" onclick="pickRose(1)">
+          <img src="images/rose2.gif" class="rose" onclick="pickRose(2)">
+          <img src="images/rose3.gif" class="rose" onclick="pickRose(3)">
+          <img src="images/rose4.gif" class="rose" onclick="pickRose(4)">
+          <img src="images/rose5.gif" class="rose" onclick="pickRose(5)">
+          <img src="images/rose6.gif" class="rose" onclick="pickRose(6)">
+          <img src="images/rose7.gif" class="rose" onclick="pickRose(7)">
+        </div>
       </div>
     </div>
 
@@ -40,6 +48,7 @@
     <!-- Final Page -->
     <div id="finalPage" class="page hidden">
       <div class="white-square">
+        <img src="images/extra.gif" alt="Extra GIF" class="final-gif" />
         <img src="images/final.gif" alt="Final Message" class="final-gif" />
       </div>
     </div>
