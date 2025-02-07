@@ -113,3 +113,4 @@ function sendEmailNotification(index) {
     .catch((error) => {
       console.error("Error sending email:", error);
     });
+  }
