@@ -1,118 +1,143 @@
-/* General Body Styles */
+/* General Page Styling */
 body {
-  background-color: #87CEEB; /* Sky blue background */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #87CEFA; /* Light blue */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
-/* Utility class to hide pages */
+/* White Square (All Pages) */
+.white-square {
+  width: 80vw;
+  max-width: 500px;
+  height: 80vh;
+  max-height: 500px;
+  background-color: white;
+  border-radius: 30px; /* Oval corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* Clipping any overflowing content */
+}
+
+/* Hide pages initially */
 .hidden {
   display: none;
 }
 
-/* Center each page */
-.page {
-  display: none;
-}
-.page:not(.hidden) {
-  display: block;
-}
-
-/* White square container with oval corners */
-.white-square {
-  background-color: white;
-  width: 500px;
-  height: 500px;
-  border-radius: 50px; /* Very rounded corners */
-  position: relative;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* First Page: Bell GIF styles */
+/* Bell GIF */
 .bell-gif {
   width: 90%;
-  max-width: 450px;
+  max-width: 400px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-  display: block;
-  margin: 0 auto;
-}
-.bell-gif:hover {
-  transform: scale(1.05);
 }
 
-/* Second Page: Grab-a-rose image */
+/* Grab-a-Rose Image (Centered) */
 .grab-rose {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
-  z-index: 2;
+  z-index: 2; /* Ensure it stays on top */
 }
 
-/* Container for rose GIFs */
+/* Roses Container */
 #rosesContainer {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
-/* Common style for each rose */
+/* Rose GIFs – arranged in a perfect circle around the center */
+/* Size: 100px x 100px */
 .rose {
-  width: 50px;
   position: absolute;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
+
+/* Arrange 7 roses evenly in a circle within a 500px square 
+   (center assumed at 250px,250px, radius = 150px, offset = 100px)
+   Then subtract 100px from all left values to shift the circle left. */
+.rose:nth-child(1) {  /* Angle 0° */
+  left: 350px - 100px;  /* Shifted left */
+  top: 200px;
+}
+.rose:nth-child(2) {  /* Angle ≈51.43° */
+  left: 294px - 100px;
+  top: 317px;
+}
+.rose:nth-child(3) {  /* Angle ≈102.86° */
+  left: 167px - 100px;
+  top: 346px;
+}
+.rose:nth-child(4) {  /* Angle ≈154.29° */
+  left: 65px - 100px;
+  top: 265px;
+}
+.rose:nth-child(5) {  /* Angle ≈205.71° */
+  left: 65px - 100px;
+  top: 135px;
+}
+.rose:nth-child(6) {  /* Angle ≈257.14° */
+  left: 167px - 100px;
+  top: 54px;
+}
+.rose:nth-child(7) {  /* Angle ≈308.57° */
+  left: 294px - 100px;
+  top: 83px;
+}
+
+/* When hovering over a rose */
 .rose:hover {
   transform: scale(1.2);
 }
 
-/* Third Page: Chosen Rose styles */
-.chosen-rose {
-  width: 250px;
-  display: block;
-  margin: 20px auto;
+/* Third Page – Message styling */
+#message {
+  text-align: center;
+  font-size: 18px;
+  max-width: 80%;
+  margin: 10px 0;
 }
 
-/* Message style in third page */
-#message {
-  font-size: 18px;
-  color: #333;
+/* Third Page – Chosen Rose GIF */
+.chosen-rose {
+  width: 150px;
+  height: auto;
   margin: 10px 0;
-  text-align: center;
 }
 
 /* Pick Another Rose Button */
 .pick-btn {
-  background-color: #87CEEB; /* Blue color similar to background */
+  background-color: #87CEFA; /* Blue similar to background */
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 24px;
+  border-radius: 15px;
   cursor: pointer;
-  border-radius: 20px;
-  font-size: 16px;
   margin-top: 20px;
 }
+
 .pick-btn:hover {
-  background-color: #70b7e1;
+  background-color: #6495ED; /* Slightly darker blue */
 }
 
-/* Final Page: Final GIF styling */
+/* Final Page – Final GIF */
 .final-gif {
-  width: 100%;
-  max-width: 500px;
-  display: block;
-  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 20px;
 }
+
+  
