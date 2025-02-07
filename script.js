@@ -13,11 +13,11 @@ const rosesContainer = document.getElementById("rosesContainer");
 const messages = [
   "I hope this rose makes your day a little brighter! 🌹",
   "Who knew a rose could look so good in your hands? 🌹😉",
-  "You deserve a rose... but I'm keeping the best for myself. 😏🌹",
+  "The thorns of a rose are forgotten when held by the right hands.🌹",
   "This rose is for someone who knows how to make me smile. 🌷",
-  "I thought this rose might be the perfect match for you. 🌸",
-  "I was going to keep this one for myself, but I guess you deserve it... for now. 😉🌹",
-  "Here's a rose... Just don’t forget who gave it to you. 🌹"
+  "Every petal holds a story, every thorn a lesson, and every rose a promise.🌸",
+  "It is the time you have wasted for your rose that makes your rose so important.🌹",
+  "With you, life is as sweet as a rose garden.🌹"
 ];
 
 // Counter for "Pick another rose" clicks
